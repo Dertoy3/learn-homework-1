@@ -14,13 +14,22 @@
   и выводя на экран результаты
 
 """
+ab = input('напиши  че нидь :')
+ba = input('лан давай еще че нидь :')
 
-def main():
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
-    
-if __name__ == "__main__":
-    main()
+def main(a , b):
+  if isinstance(a, str) and isinstance(b, str):
+    a = a.lower()
+    b = b.lower()
+    if a == b :
+      return f'мб чет пооригинальнее {a} : {b}'
+    elif a != b and len(a) > len(b):
+      return f'так уже интереснее {a} : {b}'
+    elif a != b and b == 'learn':
+      return f'это база {a} : {b}'
+  else:
+    return f'а это уже херня какая то {a}:{b};'
+
+result = main(ab , ba)
+print(result)
+
