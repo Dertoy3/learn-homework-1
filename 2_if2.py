@@ -15,7 +15,7 @@
 
 """
 ab = input('напиши  че нидь :')
-ba = input('лан давай еще че нидь :')
+ba = input('давай еще че нидь :')
 
 def main(a , b):
   if isinstance(a, str) and isinstance(b, str):
