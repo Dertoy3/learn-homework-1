@@ -22,13 +22,13 @@ def main(a , b):
     a = a.lower()
     b = b.lower()
     if a == b :
-      return f'мб чет пооригинальнее {a} : {b}'
+      return '1'
     elif a != b and len(a) > len(b):
-      return f'так уже интереснее {a} : {b}'
+      return '2'
     elif a != b and b == 'learn':
-      return f'это база {a} : {b}'
+      return '3'
   else:
-    return f'а это уже херня какая то {a}:{b};'
+    return '0'
 
 result = main(ab , ba)
 print(result)
